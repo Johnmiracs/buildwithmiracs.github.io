@@ -7,7 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
-    /* General Styles */
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
@@ -22,7 +21,7 @@
     header {
       background-color: #000;
       color: #fff;
-      padding: 10px 30px;
+      padding: 10px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -34,7 +33,7 @@
 
     header h1 {
       margin: 0;
-      font-size: 1.4rem; /* smaller, sharp */
+      font-size: 1.3rem;
       font-weight: 700;
       text-align: center;
     }
@@ -42,17 +41,24 @@
     nav {
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 35px;
       margin-top: 8px;
-      flex-wrap: wrap; /* allows wrapping without stacking vertically */
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none; /* Firefox */
+    }
+
+    nav::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
     }
 
     nav a {
       color: #fff;
       font-weight: bold;
       font-size: 0.95rem;
-      transition: 0.3s;
       white-space: nowrap;
+      padding: 5px 10px;
+      transition: 0.3s;
     }
 
     nav a:hover {
@@ -273,11 +279,11 @@
       font-size: 1rem;
     }
 
-    /* Mobile Adjustments */
+    /* Mobile Fix: Horizontal nav like desktop */
     @media(max-width:600px){
       header h1 { font-size: 1.2rem; }
-      nav { gap: 15px; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-      nav a { font-size: 0.9rem; padding: 0 5px; }
+      nav { gap: 20px; flex-wrap: nowrap; overflow-x: auto; }
+      nav a { font-size: 0.9rem; padding: 0 10px; display: inline-block; }
     }
 
   </style>
@@ -350,9 +356,5 @@
     <p>Connect with us:</p>
     <div class="footer-email"><i class="fas fa-envelope"></i> buildwithmiracs@hotmail.com</div>
     <a href="https://www.linkedin.com/in/john-fajobi-340aab378" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=61578859151232" target="_blank"><i class="fab fa-facebook"></i></a>
-    <p>&copy; 2025 BuildwithMiracs</p>
-  </footer>
-
-</body>
-</html>
+    <a href="https://www.facebook.com
+      
