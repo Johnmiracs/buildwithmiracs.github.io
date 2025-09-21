@@ -183,6 +183,23 @@
       color: #555;
     }
 
+    /* About Us */
+    #about {
+      background: linear-gradient(135deg, #f4f8ff, #dbe7ff, #eef2ff);
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      padding: 50px 30px;
+      text-align: center;
+    }
+
+    #about p {
+      font-size: 15px;
+      color: #444;
+      line-height: 1.8;
+      max-width: 750px;
+      margin: auto;
+    }
+
     /* Contact */
     form {
       max-width: 600px;
@@ -240,7 +257,7 @@
   <header>
     <div class="header-container">
       <!-- Dropdown Toggle -->
-      <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">
+      <div class="menu-toggle" onclick="toggleMenu()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
@@ -249,9 +266,9 @@
       <div class="brand">Welcome to BuildwithMiracs</div>
       <!-- Dropdown Menu -->
       <nav>
-        <a href="#services">OUR SERVICES</a>
-        <a href="#about">ABOUT US</a>
-        <a href="#contact">CONTACT US</a>
+        <a href="#services" onclick="closeMenu()">OUR SERVICES</a>
+        <a href="#about" onclick="closeMenu()">ABOUT US</a>
+        <a href="#contact" onclick="closeMenu()">CONTACT US</a>
       </nav>
     </div>
   </header>
@@ -259,7 +276,7 @@
   <!-- Hero -->
   <section class="hero">
     <h1>Transforming Brands into Digital Success Stories</h1>
-    <p>We build growth driven websites optimize digital stores and run marketing campaigns that actually convert. With BuildwithMiracs you are not just online you are ahead of the competition.</p>
+    <p>We build growth driven websites, optimize digital stores, and run marketing campaigns that actually convert. With BuildwithMiracs, you are not just online you are ahead of the competition.</p>
     <a href="#contact">Get Started</a>
   </section>
 
@@ -269,27 +286,19 @@
     <div class="services-grid">
       <div class="service">
         <h3>Website Design</h3>
-        <p>Modern responsive and conversion focused websites built on Shopify WordPress and more designed to impress and perform.</p>
+        <p>Modern, responsive, and conversion focused websites built on Shopify, WordPress, and more designed to impress and perform.</p>
       </div>
       <div class="service">
-        <h3>Ecommerce Management</h3>
-        <p>From product uploads to sales optimization we manage online stores so you can focus on running your business not the tech.</p>
+        <h3>E Commerce Management</h3>
+        <p>From product uploads to sales optimization, we manage online stores so you can focus on running your business not the tech.</p>
       </div>
       <div class="service">
         <h3>Paid Ads Setup</h3>
-        <p>Google Facebook Instagram and TikTok ads tailored to reach your ideal audience drive quality traffic and maximize ROI.</p>
+        <p>Google, Facebook, Instagram, and TikTok ads tailored to reach your ideal audience, drive quality traffic, and maximize ROI.</p>
       </div>
       <div class="service">
         <h3>SEO and Content Strategy</h3>
-        <p>Boost your visibility with smart SEO keyword research and engaging content that makes your brand stand out.</p>
-      </div>
-      <div class="service">
-        <h3>Email Marketing Automation</h3>
-        <p>We create automated email campaigns that engage your audience nurture leads and turn customers into loyal buyers.</p>
-      </div>
-      <div class="service">
-        <h3>Social Media Management</h3>
-        <p>We manage your social media platforms to build community increase engagement and position your brand as a leader in your industry.</p>
+        <p>Boost your visibility with smart SEO, keyword research, and engaging content that makes your brand stand out.</p>
       </div>
     </div>
   </section>
@@ -297,10 +306,11 @@
   <!-- About -->
   <section id="about">
     <h2>About Us</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-      At BuildwithMiracs we specialize in turning ideas into impactful digital experiences. 
-      Our team blends design technology and strategy to create solutions that help brands grow faster online. 
-      Whether you are starting small or scaling big we have the expertise to get you there.
+    <p>
+      At BuildwithMiracs, we believe that great digital experiences are not built by chance but by strategy, design, and execution.  
+      We combine creative thinking with technical expertise to deliver solutions that help businesses grow faster online.  
+      Our process is centered on collaboration, transparency, and measurable results because we want to be more than service providers we want to be long term partners in your success.  
+      Whether you are a startup looking to launch or an established brand aiming to scale, our team is equipped to take you there with precision and innovation.
     </p>
   </section>
 
@@ -320,8 +330,18 @@
     <p>Contact us: buildwithmiracs@hotmail.com</p>
     <a href="https://www.facebook.com/profile.php?id=61578859151232"><i class="fa-brands fa-facebook"></i></a>
     <a href="https://www.linkedin.com/in/john-fajobi-340aab378"><i class="fa-brands fa-linkedin"></i></a>
-    <p>&copy; 2025 BuildwithMiracs. All Rights Reserved.</p>
+    <p>&copy; 2025 BuildwithMiracs. All rights reserved.</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('nav').classList.toggle('active');
+    }
+
+    function closeMenu() {
+      document.querySelector('nav').classList.remove('active');
+    }
+  </script>
 
 </body>
 </html>
