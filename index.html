@@ -21,7 +21,6 @@
       background: #fff;
       z-index: 1000;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      flex-wrap: wrap;
     }
 
     .logo img {
@@ -29,29 +28,16 @@
       height: auto;
     }
 
-    nav {
-      flex: 1;
-      margin-left: 2rem;
-    }
-
     nav ul {
       display: flex;
       gap: 1.5rem;
       list-style: none;
-      overflow-x: auto;      /* horizontal scroll on small screens */
-      white-space: nowrap;   /* prevent wrapping */
-    }
-
-    nav ul li {
-      flex: 0 0 auto;        /* prevent shrinking */
     }
 
     nav ul li a {
       text-decoration: none;
       color: #333;
       font-weight: 600;
-      padding: 0.5rem 0;
-      display: inline-block;
       transition: color 0.3s;
     }
 
@@ -60,7 +46,11 @@
     }
 
     .menu-btn {
-      display: none; /* hide hamburger menu */
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
     }
 
     /* Hero Section */
@@ -181,16 +171,25 @@
       text-decoration: none;
     }
 
-    /* Responsive tweaks */
+    /* Responsive */
     @media (max-width: 768px) {
-      nav {
-        margin-left: 0;
-        width: 100%;
+      nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #fff;
+        width: 200px;
+        display: none;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       }
 
-      nav ul {
-        justify-content: flex-start;
-        gap: 1rem;
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
       }
 
       .hero h1 {
@@ -204,7 +203,6 @@
   </style>
 </head>
 <body>
-  <!-- Header with horizontal nav -->
   <header>
     <div class="logo">
       <img src="https://via.placeholder.com/150x50?text=BuildwithMiracs" alt="BuildwithMiracs Logo">
@@ -215,6 +213,7 @@
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
     </nav>
   </header>
 
@@ -256,5 +255,11 @@
     <p>© 2025 BuildwithMiracs. All rights reserved.</p>
     <p>Contact us: <a href="mailto:info@buildwithmiracs.com">info@buildwithmiracs.com</a></p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('nav ul').classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
