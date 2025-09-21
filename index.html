@@ -16,9 +16,9 @@
       font-family: Arial, sans-serif;
       line-height: 1.6;
       color: #333;
-      background: linear-gradient(135deg, #f9f9f9, #e9f0ff, #fff);
+      background: linear-gradient(135deg, #f9f9f9, #e9f0ff, #fff, #f4f8ff);
       background-size: 400% 400%;
-      animation: gradientMove 12s ease infinite;
+      animation: gradientMove 15s ease infinite;
     }
 
     @keyframes gradientMove {
@@ -57,7 +57,7 @@
       flex-grow: 1;
     }
 
-    /* Dropdown Menu */
+    /* Dropdown Toggle */
     .menu-toggle {
       display: flex;
       flex-direction: column;
@@ -166,9 +166,11 @@
       transition: 0.3s;
     }
 
+    /* Hover effect */
     .service:hover {
-      transform: translateY(-5px);
-      background: #f0f4ff;
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(37,117,252,0.3);
+      background: #f9fbff;
     }
 
     .service h3 {
@@ -256,8 +258,8 @@
 
   <!-- Hero -->
   <section class="hero">
-    <h1>Welcome to BuildwithMiracs</h1>
-    <p>We design, manage, and optimize online stores and digital platforms for growth.</p>
+    <h1>Transforming Brands into Digital Success Stories</h1>
+    <p>We build growth-driven websites, optimize digital stores, and run marketing campaigns that actually convert. With BuildwithMiracs, you’re not just online—you’re ahead of the competition.</p>
     <a href="#contact">Get Started</a>
   </section>
 
@@ -267,23 +269,19 @@
     <div class="services-grid">
       <div class="service">
         <h3>Website Design</h3>
-        <p>We craft professional websites on Shopify, WordPress, and other platforms that are responsive, visually appealing, and built to convert visitors into customers.</p>
+        <p>Modern, responsive, and conversion-focused websites built on Shopify, WordPress, and more—designed to impress and perform.</p>
       </div>
       <div class="service">
-        <h3>Search Engine Optimization (SEO)</h3>
-        <p>We optimize websites to rank higher on search engines, driving organic traffic and ensuring your business gets discovered by the right audience.</p>
-      </div>
-      <div class="service">
-        <h3>Email Marketing</h3>
-        <p>Our tailored email campaigns nurture relationships with your audience, boost retention, and generate consistent sales from loyal customers.</p>
-      </div>
-      <div class="service">
-        <h3>Social Media Management</h3>
-        <p>We manage and grow your social presence, creating strategies and content that engage followers and strengthen brand trust.</p>
+        <h3>E-Commerce Management</h3>
+        <p>From product uploads to sales optimization, we manage online stores so you can focus on running your business, not the tech.</p>
       </div>
       <div class="service">
         <h3>Paid Ads Setup</h3>
-        <p>From Google Ads to Facebook and Instagram campaigns, we design targeted ad strategies that maximize your reach and return on investment.</p>
+        <p>Google, Facebook, Instagram, and TikTok ads tailored to reach your ideal audience, drive quality traffic, and maximize ROI.</p>
+      </div>
+      <div class="service">
+        <h3>SEO & Content Strategy</h3>
+        <p>Boost your visibility with smart SEO, keyword research, and engaging content that makes your brand stand out.</p>
       </div>
     </div>
   </section>
@@ -291,7 +289,11 @@
   <!-- About -->
   <section id="about">
     <h2>About Us</h2>
-    <p>At BuildwithMiracs, our goal is simple: to help brands design and optimize their stores for real sales results. With a mix of creativity and technical know-how, we help businesses establish strong online identities that convert.</p>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      At BuildwithMiracs, we specialize in turning ideas into impactful digital experiences. 
+      Our team blends design, technology, and strategy to create solutions that help brands grow faster online. 
+      Whether you’re starting small or scaling big, we’ve got the expertise to get you there.
+    </p>
   </section>
 
   <!-- Contact -->
@@ -300,19 +302,16 @@
     <form action="https://formspree.io/f/xzzjpebd" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 BuildwithMiracs | All Rights Reserved</p>
-    <p>Email: <a href="mailto:buildwithmiracs@hotmail.com">buildwithmiracs@hotmail.com</a></p>
-    <div>
-      <a href="https://www.linkedin.com/in/john-fajobi-340aab378"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=61578859151232"><i class="fab fa-facebook"></i></a>
-    </div>
+    <p>Contact us: buildwithmiracs@hotmail.com</p>
+    <a href="https://www.facebook.com/profile.php?id=61578859151232"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/in/john-fajobi-340aab378"><i class="fa-brands fa-linkedin"></i></a>
   </footer>
 
 </body>
