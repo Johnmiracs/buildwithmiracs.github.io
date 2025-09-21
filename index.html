@@ -109,6 +109,23 @@
 
     .hero p {
       font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .hero a {
+      display: inline-block;
+      background: #fff;
+      color: #2575fc;
+      padding: 12px 25px;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .hero a:hover {
+      background: #f4f4f9;
+      color: #1a1a2e;
     }
 
     /* Sections */
@@ -143,6 +160,16 @@
     .service:hover {
       transform: translateY(-5px);
       background: #f0f4ff;
+    }
+
+    .service h3 {
+      margin-bottom: 10px;
+      color: #2575fc;
+    }
+
+    .service p {
+      font-size: 14px;
+      color: #555;
     }
 
     /* Contact */
@@ -217,6 +244,7 @@
   <section class="hero">
     <h1>Welcome to BuildwithMiracs</h1>
     <p>We help brands design, optimize, and scale their online stores to boost sales.</p>
+    <a href="#contact">Get Started</a>
   </section>
 
   <!-- Services -->
@@ -225,23 +253,23 @@
     <div class="services-grid">
       <div class="service" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">
         <h3>Website Designing</h3>
-        <p>Shopify, WordPress, Wix & more.</p>
+        <p>We design and develop websites on Shopify, WordPress, Wix, and more—responsive, modern, and optimized for conversions.</p>
       </div>
       <div class="service" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">
-        <h3>Search Engine Optimization</h3>
-        <p>Boost visibility & ranking on search engines.</p>
+        <h3>Search Engine Optimization (SEO)</h3>
+        <p>Improve your search engine ranking, drive organic traffic, and build long-term visibility for your brand.</p>
       </div>
       <div class="service" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">
         <h3>Email Marketing</h3>
-        <p>Engaging campaigns to convert leads into sales.</p>
+        <p>Automated campaigns to engage your audience and convert leads into loyal customers.</p>
       </div>
       <div class="service" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">
         <h3>Social Media Management</h3>
-        <p>Grow and manage your brand presence online.</p>
+        <p>We create, schedule, and manage content across your social platforms to grow your brand presence.</p>
       </div>
       <div class="service" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">
         <h3>Paid Ads Setup</h3>
-        <p>Google Ads, Facebook & Instagram Ads, and more.</p>
+        <p>Launch high-converting campaigns on Google Ads, Facebook Ads, Instagram Ads, and more to maximize ROI.</p>
       </div>
     </div>
   </section>
@@ -249,7 +277,7 @@
   <!-- About -->
   <section id="about">
     <h2>About Us</h2>
-    <p>Hi, I’m John, the founder of BuildwithMiracs. Our goal is to help brands design and optimize their stores so they don’t just look good, but actually convert visitors into paying customers. From store design to digital marketing, we’re here to make sales happen for your brand.</p>
+    <p>Hi, I’m John, the founder of BuildwithMiracs. Our goal is to help brands design and optimize their stores so they don’t just look good, but actually convert visitors into paying customers. From store design to SEO, email marketing, and ads, we’re here to make sales happen for your brand.</p>
   </section>
 
   <!-- Contact -->
