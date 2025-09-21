@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
-    /* General Styles */
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
@@ -16,35 +16,44 @@
       line-height: 1.6;
     }
     a { text-decoration: none; color: inherit; }
-    img { max-width: 100%; }
 
     /* Header */
     header {
-      background: #1a1a2e;
+      background-color: #000;
       color: #fff;
-      padding: 20px 0;
-      text-align: center;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    header img {
-      width: 120px;
-      margin-bottom: 10px;
+    header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    header .logo img {
+      width: 80px;
     }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2rem;
-      color: #f4f4f4;
+    nav a {
+      margin-left: 20px;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #2575fc;
     }
 
     /* Hero Section */
     .hero {
-      background: linear-gradient(to right, #6a11cb, #2575fc);
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
       color: #fff;
       text-align: center;
       padding: 80px 20px;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
     }
     .hero h2 {
       font-size: 2.5rem;
@@ -70,12 +79,14 @@
     }
 
     /* About Section */
-    .about, .services, .contact {
+    .about {
       padding: 60px 20px;
       max-width: 1000px;
       margin: 0 auto;
+      background: linear-gradient(135deg, #f9f9f9, #e6e6fa);
+      clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
     }
-    .about h2, .services h2, .contact h2 {
+    .about h2 {
       text-align: center;
       font-size: 2rem;
       margin-bottom: 20px;
@@ -89,6 +100,19 @@
     }
 
     /* Services Section */
+    .services {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #fff, #f0f8ff);
+      clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+    }
+    .services h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #1a1a2e;
+    }
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -101,6 +125,7 @@
       border-radius: 15px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
       transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
     }
     .service-card:hover {
       transform: translateY(-10px);
@@ -116,6 +141,19 @@
     }
 
     /* Contact Section */
+    .contact {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #f4f4f9, #e0f7fa);
+      clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+    }
+    .contact h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #1a1a2e;
+    }
     .contact form {
       max-width: 600px;
       margin: 0 auto;
@@ -147,7 +185,7 @@
 
     /* Footer */
     footer {
-      background: #1a1a2e;
+      background: #000;
       color: #fff;
       padding: 30px 20px;
       text-align: center;
@@ -161,7 +199,6 @@
     footer a:hover {
       color: #2575fc;
     }
-
     .footer-email {
       display: flex;
       justify-content: center;
@@ -173,6 +210,7 @@
 
     @media(max-width:600px){
       .hero h2 { font-size: 2rem; }
+      header { flex-direction: column; gap: 10px; }
     }
   </style>
 </head>
@@ -180,45 +218,51 @@
 
   <!-- Header -->
   <header>
-    <img src="assets/logo.png" alt="BuildwithMiracs Logo">
-    <h1>BuildwithMiracs</h1>
-    <p>Building Stunning Websites & Growing Your Digital Presence</p>
+    <div class="logo">
+      <img src="assets/logo.png" alt="BuildwithMiracs Logo">
+      <span>BuildwithMiracs</span>
+    </div>
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact Us for Consultation</a>
+    </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
     <h2>Helping Brands Design & Optimize Their Online Stores</h2>
-    <p>We create modern, responsive websites and combine SEO, email marketing, and social media management to grow your sales and reach more customers.</p>
+    <p>We create modern, responsive websites and combine SEO, email marketing, social media management, and paid ads to grow your sales and reach more customers.</p>
     <a href="#contact">Get Started</a>
   </section>
 
   <!-- About Section -->
   <section class="about" id="about">
     <h2>About Us</h2>
-    <p>Hi, I’m John Fajobi, the founder of BuildwithMiracs. Our mission is simple: to help brands design and optimize their online stores so they not only look great but also drive sales. We combine creative design, SEO, email marketing, and social media management to ensure your brand reaches the right audience and converts visitors into loyal customers.</p>
+    <p>Hi, I’m John Fajobi, the founder of BuildwithMiracs. Our mission is simple: to help brands design and optimize their online stores so they not only look great but also drive sales. We combine creative design, SEO, email marketing, social media management, and paid advertising to ensure your brand reaches the right audience and converts visitors into loyal customers.</p>
   </section>
 
   <!-- Services Section -->
   <section class="services" id="services">
     <h2>Our Services</h2>
     <div class="services-grid">
-      <div class="service-card">
+      <div class="service-card" onclick="location.href='#contact'">
         <h3>Website Design & Development</h3>
         <p>Custom websites on platforms like Shopify, WordPress, and Wix. Responsive, modern, and user-friendly designs tailored to your brand.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card" onclick="location.href='#contact'">
         <h3>Search Engine Optimization (SEO)</h3>
         <p>Boost your website’s visibility, improve rankings, drive organic traffic, and increase your online presence.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card" onclick="location.href='#contact'">
         <h3>Email Marketing</h3>
         <p>Engaging campaigns to grow your audience and drive sales, with automation and analytics integration for maximum results.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card" onclick="location.href='#contact'">
         <h3>Social Media Management</h3>
         <p>Professional management of Facebook, LinkedIn, Instagram, and more to create content, schedule posts, and grow your online community.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card" onclick="location.href='#contact'">
         <h3>Paid Ads Setup</h3>
         <p>Strategically crafted ad campaigns across Google Ads, Facebook Ads, and Instagram Ads to drive targeted traffic, increase conversions, and maximize ROI for your business.</p>
       </div>
@@ -227,26 +271,12 @@
 
   <!-- Contact Section -->
   <section class="contact" id="contact">
-    <h2>Contact Us</h2>
+    <h2>Contact Us for Consultation</h2>
     <form action="https://formspree.io/f/xzzjpebd" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>Connect with us:</p>
-    <a href="https://www.linkedin.com/in/john-fajobi-340aab378" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=61578859151232" target="_blank"><i class="fab fa-facebook"></i></a>
-    <div class="footer-email">
-      <i class="fas fa-envelope"></i>
-      <span>buildwithmiracs@hotmail.com</span>
-    </div>
-    <p>&copy; 2025 BuildwithMiracs</p>
-  </footer>
-
-</body>
-</html>
+    
