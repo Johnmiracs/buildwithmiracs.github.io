@@ -6,7 +6,7 @@ From idea to launch, BuildwithMiracs builds websites that not only look modern a
 
 ---
 
-## 🚀 What We Do
+## What We Do
 - Custom website design  
 - Branding and digital identity  
 - SEO-ready and responsive layouts  
@@ -14,7 +14,7 @@ From idea to launch, BuildwithMiracs builds websites that not only look modern a
 
 ---
 
-## 🌍 Live Website
+## Live Website
 Once published, the site will be available here:  
  [https://buildwithmiracs.github.io](https://buildwithmiracs.github.io)  
 
@@ -22,7 +22,8 @@ Once published, the site will be available here:
 
 ## 📩 Get in Touch
 Interested in working together?  
-Let’s start building your brand today.  
+Let’s start building your brand today. 
+ ## buildwithmiracs@hotmail.com
 
 ---
 
