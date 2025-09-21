@@ -7,21 +7,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
+    /* General Styles */
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background-color: #f4f4f9;
       color: #333;
       line-height: 1.6;
+      background: #f4f4f9;
     }
     a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; }
 
     /* Header */
     header {
       background-color: #000;
       color: #fff;
-      padding: 10px 20px;
+      padding: 10px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -35,10 +37,10 @@
       gap: 10px;
     }
     header .logo img {
-      width: 80px;
+      width: 70px; 
     }
     nav a {
-      margin-left: 20px;
+      margin-left: 25px;
       color: #fff;
       font-weight: bold;
       transition: 0.3s;
@@ -46,14 +48,31 @@
     nav a:hover {
       color: #2575fc;
     }
+    @media(max-width:768px){
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+    }
 
     /* Hero Section */
     .hero {
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      background: linear-gradient(135deg, #6a11cb, #2575fc, #6a11cb);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
       color: #fff;
       text-align: center;
       padding: 80px 20px;
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    }
+    @keyframes gradientBG {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
     }
     .hero h2 {
       font-size: 2.5rem;
@@ -83,8 +102,15 @@
       padding: 60px 20px;
       max-width: 1000px;
       margin: 0 auto;
-      background: linear-gradient(135deg, #f9f9f9, #e6e6fa);
+      background: linear-gradient(120deg, #f9f9f9, #e6e6fa, #f4f4f9);
+      background-size: 300% 300%;
+      animation: gradientBG2 20s ease infinite;
       clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+    }
+    @keyframes gradientBG2 {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
     }
     .about h2 {
       text-align: center;
@@ -104,8 +130,15 @@
       padding: 60px 20px;
       max-width: 1000px;
       margin: 0 auto;
-      background: linear-gradient(135deg, #fff, #f0f8ff);
+      background: linear-gradient(120deg, #fff, #f0f8ff, #e6f7ff);
+      background-size: 300% 300%;
+      animation: gradientBG3 25s ease infinite;
       clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+    }
+    @keyframes gradientBG3 {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
     }
     .services h2 {
       text-align: center;
@@ -145,8 +178,15 @@
       padding: 60px 20px;
       max-width: 1000px;
       margin: 0 auto;
-      background: linear-gradient(135deg, #f4f4f9, #e0f7fa);
+      background: linear-gradient(120deg, #f4f4f9, #e0f7fa, #d0f0f5);
+      background-size: 300% 300%;
+      animation: gradientBG4 20s ease infinite;
       clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+    }
+    @keyframes gradientBG4 {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
     }
     .contact h2 {
       text-align: center;
@@ -211,6 +251,7 @@
     @media(max-width:600px){
       .hero h2 { font-size: 2rem; }
       header { flex-direction: column; gap: 10px; }
+      nav a { margin-left: 0; margin-right: 15px; }
     }
   </style>
 </head>
@@ -225,7 +266,7 @@
     <nav>
       <a href="#about">About Us</a>
       <a href="#services">Services</a>
-      <a href="#contact">Contact Us for Consultation</a>
+      <a href="#contact">Contact for Consultation</a>
     </nav>
   </header>
 
@@ -248,7 +289,7 @@
     <div class="services-grid">
       <div class="service-card" onclick="location.href='#contact'">
         <h3>Website Design & Development</h3>
-        <p>Custom websites on platforms like Shopify, WordPress, and Wix. Responsive, modern, and user-friendly designs tailored to your brand.</p>
+        <p>Custom websites on Shopify, WordPress, Wix, and more. Modern, responsive, and user-friendly designs tailored to your brand.</p>
       </div>
       <div class="service-card" onclick="location.href='#contact'">
         <h3>Search Engine Optimization (SEO)</h3>
@@ -264,19 +305,30 @@
       </div>
       <div class="service-card" onclick="location.href='#contact'">
         <h3>Paid Ads Setup</h3>
-        <p>Strategically crafted ad campaigns across Google Ads, Facebook Ads, and Instagram Ads to drive targeted traffic, increase conversions, and maximize ROI for your business.</p>
+        <p>Strategically crafted ad campaigns across Google Ads, Facebook Ads, and Instagram Ads to drive targeted traffic, increase conversions, and maximize ROI.</p>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section class="contact" id="contact">
-    <h2>Contact Us for Consultation</h2>
+    <h2>Contact for Consultation</h2>
     <form action="https://formspree.io/f/xzzjpebd" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
+  </section>
 
-    
+  <!-- Footer -->
+  <footer>
+    <p>Connect with us:</p>
+    <div class="footer-email"><i class="fas fa-envelope"></i> buildwithmiracs@hotmail.com</div>
+    <a href="https://www.linkedin.com/in/john-fajobi-340aab378" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61578859151232" target="_blank"><i class="fab fa-facebook"></i></a>
+    <p>&copy; 2025 BuildwithMiracs</p>
+  </footer>
+
+</body>
+</html>
