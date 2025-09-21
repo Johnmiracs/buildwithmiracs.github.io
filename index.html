@@ -1,91 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BuildwithMiracs</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <!-- ===== Header ===== -->
   <header>
     <h1>BuildwithMiracs</h1>
-    <p>Start your brand with us — we create websites that stand out.</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>From idea to launch, we create websites that work</p>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm John, the founder of BuildwithMiracs. I have several years of experience in website design and development across platforms such as Shopify, Wix, WordPress, and more. My brand helps store owners grow their businesses through the right marketing strategies, including SEO, social media marketing, and advertising. At BuildwithMiracs, the goal is to design functional websites and create digital strategies that drive results.</p>
-    </section>
+  <!-- ===== Navigation ===== -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <p>Here are some of my recent projects. More will be added soon.</p>
-      <div class="portfolio-item">
-        <img src="https://via.placeholder.com/400x250" alt="Dutcholly Project Screenshot">
-        <h3>Dutcholly</h3>
-        <p>E-commerce website project.</p>
-        <a href="https://dutcholly.com" target="_blank">Visit Site</a>
-      </div>
-      <!-- Add more portfolio items below following the same structure -->
-    </section>
+  <!-- ===== About Section ===== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm John, the founder of BuildwithMiracs. I have years of experience in website designing on 
+      platforms like Shopify, Wix, WordPress, and more. My brand helps store owners grow their businesses 
+      with the right marketing strategies, including SEO, social media marketing, and advertising.
+    </p>
+  </section>
 
-    <section id="services">
-      <h2>Services</h2>
+  <!-- ===== Portfolio Section ===== -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <ul>
+      <li>
+        <img src="https://via.placeholder.com/250x150" alt="Dutcholly Project">
+        <p><a href="https://dutcholly.com" target="_blank">Dutcholly.com</a></p>
+      </li>
+      <!-- Add more portfolio items later -->
+    </ul>
+  </section>
+
+  <!-- ===== Services Section ===== -->
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Website Development</li>
+      <li>Sales Marketing</li>
+      <li>Store Management</li>
+      <li>Print on Demand Design</li>
+    </ul>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xzzjpebd" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="alternatives">
+      <h3>Alternatives</h3>
       <ul>
-        <li>Website Development</li>
-        <li>Sales Marketing</li>
-        <li>Store Management</li>
-        <li>Print on Demand Design</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-  <h2>Contact Me</h2>
-  <form action="https://formspree.io/f/xzzjpebd" method="POST">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
-<div class="alternatives">
-  <h3>Alternatives</h3>
-  <ul>
-    <li>
-      <a href="mailto:buildwithmiracs@hotmail.com">
-        <i class="fas fa-envelope"></i> buildwithmiracs@hotmail.com
-      </a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/john-fajobi-340aab378" target="_blank">
-        <i class="fab fa-linkedin"></i> LinkedIn Profile
-      </a>
-    </li>
-    <li>
-      <a href="https://www.facebook.com/profile.php?id=61578859151232" target="_blank">
-        <i class="fab fa-facebook"></i> Facebook Profile
-      </a>
-    </li>
-  </ul>
-</div>
-  </main>
-
-  <footer>
-    <p>© 2025 BuildwithMiracs. All rights reserved.</p>
-  </footer>
-</body>
-      </html>
-      
+        <li>
+          <a href="mailto:buildwithmiracs@hotmail.com">
+            <i class="fas fa-envelope"></i> buildwit
+  
