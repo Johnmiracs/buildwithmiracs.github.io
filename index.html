@@ -4,78 +4,232 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BuildwithMiracs</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; }
+
+    /* Header */
+    header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2rem;
+      color: #f4f4f4;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    .hero a {
+      display: inline-block;
+      background: #fff;
+      color: #2575fc;
+      padding: 12px 25px;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .hero a:hover {
+      background: #f4f4f9;
+      color: #1a1a2e;
+    }
+
+    /* About Section */
+    .about, .services, .contact {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .about h2, .services h2, .contact h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #1a1a2e;
+    }
+    .about p {
+      text-align: center;
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Services Section */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .service-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+    .service-card h3 {
+      margin-top: 0;
+      color: #2575fc;
+    }
+    .service-card p {
+      margin: 10px 0 0;
+      font-size: 0.95rem;
+    }
+
+    /* Contact Section */
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact input, .contact textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      width: 100%;
+    }
+    .contact button {
+      padding: 12px;
+      border: none;
+      border-radius: 50px;
+      background: #2575fc;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .contact button:hover {
+      background: #6a11cb;
+    }
+
+    /* Footer */
+    footer {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: 0.3s;
+    }
+    footer a:hover {
+      color: #2575fc;
+    }
+
+    @media(max-width:600px){
+      .hero h2 { font-size: 2rem; }
+    }
+  </style>
 </head>
 <body>
-  <!-- ===== Header ===== -->
+
+  <!-- Header -->
   <header>
+    <img src="https://drive.google.com/uc?export=view&id=1OjwnMsRgsL1_VajvgieUYiGQgf9FeY9b" alt="BuildwithMiracs Logo">
     <h1>BuildwithMiracs</h1>
-    <p>From idea to launch, we create websites that work</p>
+    <p>Building Stunning Websites & Growing Your Digital Presence</p>
   </header>
 
-  <!-- ===== Navigation ===== -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- ===== About Section ===== -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm John, the founder of BuildwithMiracs. I have years of experience in website designing on 
-      platforms like Shopify, Wix, WordPress, and more. My brand helps store owners grow their businesses 
-      with the right marketing strategies, including SEO, social media marketing, and advertising.
-    </p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Helping Brands Design & Optimize Their Online Stores</h2>
+    <p>We create modern, responsive websites and combine SEO, email marketing, and social media management to grow your sales and reach more customers.</p>
+    <a href="#contact">Get Started</a>
   </section>
 
-  <!-- ===== Portfolio Section ===== -->
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <ul>
-      <li>
-        <img src="https://via.placeholder.com/250x150" alt="Dutcholly Project">
-        <p><a href="https://dutcholly.com" target="_blank">Dutcholly.com</a></p>
-      </li>
-      <!-- Add more portfolio items later -->
-    </ul>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Hi, I’m John Fajobi, the founder of BuildwithMiracs. Our mission is simple: to help brands design and optimize their online stores so they not only look great but also drive sales. We combine creative design, SEO, email marketing, and social media management to ensure your brand reaches the right audience and converts visitors into loyal customers.</p>
   </section>
 
-  <!-- ===== Services Section ===== -->
-  <section id="services">
-    <h2>Services</h2>
-    <ul>
-      <li>Website Development</li>
-      <li>Sales Marketing</li>
-      <li>Store Management</li>
-      <li>Print on Demand Design</li>
-    </ul>
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Website Design & Development</h3>
+        <p>Custom websites on platforms like Shopify, WordPress, and Wix. Responsive, modern, and user-friendly designs tailored to your brand.</p>
+      </div>
+      <div class="service-card">
+        <h3>Search Engine Optimization (SEO)</h3>
+        <p>Boost your website’s visibility, improve rankings, drive organic traffic, and increase your online presence.</p>
+      </div>
+      <div class="service-card">
+        <h3>Email Marketing</h3>
+        <p>Engaging campaigns to grow your audience and drive sales, with automation and analytics integration for maximum results.</p>
+      </div>
+      <div class="service-card">
+        <h3>Social Media Management</h3>
+        <p>Professional management of Facebook, LinkedIn, Instagram, and more to create content, schedule posts, and grow your online community.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- ===== Contact Section ===== -->
-  <section id="contact">
-    <h2>Contact Me</h2>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
     <form action="https://formspree.io/f/xzzjpebd" method="POST">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
+  </section>
 
-    <div class="alternatives">
-      <h3>Alternatives</h3>
-      <ul>
-        <li>
-          <a href="mailto:buildwithmiracs@hotmail.com">
-            <i class="fas fa-envelope"></i> buildwit
-  
+  <!-- Footer -->
+  <footer>
+    <p>Connect with us:</p>
+    <a href="https://www.linkedin.com/in/john-fajobi-340aab378" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61578859151232" target="_blank"><i class="fab fa-facebook"></i></a>
+    <p>&copy; 2025 BuildwithMiracs</p>
+  </footer>
+
+</body>
+</html>
