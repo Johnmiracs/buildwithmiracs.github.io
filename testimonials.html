@@ -1,1 +1,130 @@
 
+<section id="testimonials">
+  <h2>Here are some of our client's feedback</h2>
+  <div class="testimonials-grid">
+    <!-- Client 1 -->
+    <div class="testimonial">
+      <img src="assets/client1.jpg" alt="Donne">
+      <h3>Donne</h3>
+      <p>BuildwithMiracs designed my Shopify store and managed sales promotions with great success. The store was not only attractive but also optimized to convert visitors into buyers.</p>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+
+    <!-- Client 2 -->
+    <div class="testimonial">
+      <img src="assets/client2.jpg" alt="Mirela">
+      <h3>Mirela</h3>
+      <p>They helped me with search engine optimization and I quickly noticed higher visibility, more organic traffic, and improved ranking on Google for my brand.</p>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+
+    <!-- Client 3 -->
+    <div class="testimonial">
+      <img src="assets/client3.jpg" alt="Impression Arts">
+      <h3>Impression Arts</h3>
+      <p>BuildwithMiracs optimized my Klaviyo email marketing. The campaigns became more engaging, targeted, and generated better customer responses and higher sales.</p>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+
+    <!-- Client 4 -->
+    <div class="testimonial">
+      <img src="assets/client4.jpg" alt="Pete">
+      <h3>Pete</h3>
+      <p>They created and managed my store from the ground up. The process was smooth, and the final store looked professional and was fully ready to start selling.</p>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #testimonials {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f9f9ff, #eef2ff, #dbe7ff);
+    background-size: 300% 300%;
+    animation: gradientMove 12s ease infinite;
+    text-align: center;
+  }
+
+  #testimonials h2 {
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: #222;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .testimonial {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+  }
+
+  .testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(37,117,252,0.3);
+  }
+
+  .testimonial img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 3px solid #2575fc;
+  }
+
+  .testimonial h3 {
+    font-size: 18px;
+    color: #2575fc;
+    margin-bottom: 10px;
+  }
+
+  .testimonial p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 15px;
+  }
+
+  .stars {
+    color: #f5b50a;
+    font-size: 16px;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>
