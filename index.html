@@ -463,49 +463,180 @@
     </p>
   </section>
 
-  <!-- FAQ SECTION -->
-<section class="faq-section">
-  <h2>Frequently Asked Questions</h2>
-  <div class="faq-item">
-    <div class="faq-question">What services do you provide? <span>+</span></div>
-    <div class="faq-answer">We help brands design, manage, and optimize their online stores with services like Shopify setup, paid advertising campaigns, SEO, and email marketing.</div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-question">How long does it take to see results? <span>+</span></div>
-    <div class="faq-answer">Results vary depending on the project, but many clients notice improvements in engagement and conversions within the first few weeks of working with us.</div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-question">Do you handle paid ads too? <span>+</span></div>
-    <div class="faq-answer">Yes, we create and manage campaigns across Google, Facebook, Instagram, and other platforms to maximize visibility and sales.</div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-question">Can you work with all niche or specific niche? <span>+</span></div>
-    <div class="faq-answer">We can work with all niche. Every brand is unique and our approach adapts to the specific goals of your business, making sure we deliver results no matter the industry.</div>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuildwithMiracs</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* GENERAL */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: linear-gradient(120deg, #f8f9fa, #eef2f3);
+    }
 
-<!-- HOW WE WORK SECTION -->
-<section class="how-we-work">
-  <h2>How We Work</h2>
-  <div class="steps">
-    <div class="step">
-      <h3>Step 1: Market Research</h3>
-      <p>We begin by deeply understanding your target audience and competitors to ensure every decision is data-driven.</p>
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #222;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      border-radius: 12px;
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #ccc;
+      padding: 15px;
+      cursor: pointer;
+    }
+
+    .faq-question {
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding-left: 10px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+      padding-top: 10px;
+    }
+
+    /* HOW WE WORK */
+    .how-we-work {
+      background: linear-gradient(135deg, #f1f8e9, #dcedc8);
+      border-radius: 12px;
+      max-width: 1100px;
+      margin: 0 auto;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 40px;
+    }
+
+    .step {
+      flex: 1 1 220px;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      background: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .step:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .step h3 {
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    .step p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .steps {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-question">What services do you provide? <span>+</span></div>
+      <div class="faq-answer">We help brands design, manage, and optimize their online stores with services like Shopify setup, paid advertising campaigns, SEO, and email marketing.</div>
     </div>
-    <div class="step">
-      <h3>Step 2: Strategy Development</h3>
-      <p>We design a tailored strategy that aligns your brand goals with the best digital tools and marketing techniques.</p>
+    <div class="faq-item">
+      <div class="faq-question">How long does it take to see results? <span>+</span></div>
+      <div class="faq-answer">Results vary depending on the project, but many clients notice improvements in engagement and conversions within the first few weeks of working with us.</div>
     </div>
-    <div class="step">
-      <h3>Step 3: Execution</h3>
-      <p>We implement the strategy across your store and campaigns with precision to boost visibility and sales.</p>
+    <div class="faq-item">
+      <div class="faq-question">Do you handle paid ads too? <span>+</span></div>
+      <div class="faq-answer">Yes, we create and manage campaigns across Google, Facebook, Instagram, and other platforms to maximize visibility and sales.</div>
     </div>
-    <div class="step">
-      <h3>Step 4: Optimization</h3>
-      <p>We constantly monitor, test, and refine our approach to make sure your growth is consistent and sustainable.</p>
+    <div class="faq-item">
+      <div class="faq-question">Can you work with all niche or specific niche?<span>+</span></div>
+      <div class="faq-answer">We can work with all niche. Every brand is unique and our approach adapts to the specific goals of your business, making sure we deliver results no matter the industry.</div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- HOW WE WORK SECTION -->
+  <section class="how-we-work">
+    <h2>How We Work</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>Step 1: Market Research</h3>
+        <p>We begin by deeply understanding your target audience and competitors to ensure every decision is data-driven.</p>
+      </div>
+      <div class="step">
+        <h3>Step 2: Strategy Development</h3>
+        <p>We design a tailored strategy that aligns your brand goals with the best digital tools and marketing techniques.</p>
+      </div>
+      <div class="step">
+        <h3>Step 3: Execution</h3>
+        <p>We implement the strategy across your store and campaigns with precision to boost visibility and sales.</p>
+      </div>
+      <div class="step">
+        <h3>Step 4: Optimization</h3>
+        <p>We constantly monitor, test, and refine our approach to make sure your growth is consistent and sustainable.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // FAQ toggle
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+        const sign = item.querySelector('span');
+        sign.textContent = item.classList.contains('active') ? '-' : '+';
+      });
+    });
+  </script>
+
+</body>
+</html>
   
   <!-- Contact -->
   <section id="contact">
