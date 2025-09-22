@@ -1,29 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Home page -->
   <url>
     <loc>https://www.buildwithmiracs.42web.io/</loc>
     <priority>1.0</priority>
   </url>
 
+  <!-- Portfolio main page -->
   <url>
     <loc>https://www.buildwithmiracs.42web.io/portfolio/</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Portfolio projects (if you want each project as separate page) -->
+  <url>
+    <loc>https://www.buildwithmiracs.42web.io/portfolio/project1</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.buildwithmiracs.42web.io/portfolio/project2</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.buildwithmiracs.42web.io/portfolio/project3</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.buildwithmiracs.42web.io/portfolio/project4</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.buildwithmiracs.42web.io/portfolio/project5</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.buildwithmiracs.42web.io/portfolio/project6</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.buildwithmiracs.42web.io/portfolio/project7</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.buildwithmiracs.42web.io/portfolio/project8</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.buildwithmiracs.42web.io/portfolio/project9</loc>
     <priority>0.8</priority>
   </url>
 
+  <!-- Sections on Home page -->
   <url>
     <loc>https://www.buildwithmiracs.42web.io/#services</loc>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://www.buildwithmiracs.42web.io/#about</loc>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://www.buildwithmiracs.42web.io/#testimonials</loc>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://www.buildwithmiracs.42web.io/#contact</loc>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
