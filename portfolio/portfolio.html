@@ -11,14 +11,30 @@
 <body>
 
   <!-- Header -->
-  <header>
-    <div class="header-container">
-      <div class="brand">BuildwithMiracs Portfolio</div>
-      <nav>
-        <a href="../index.html">Home</a>
-      </nav>
+<header>
+  <div class="header-container">
+    <!-- Dropdown Toggle for mobile -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
-  </header>
+    
+    <!-- Brand -->
+    <div class="brand">BuildwithMiracs Portfolio</div>
+    
+    <!-- Navigation Menu -->
+    <nav>
+      <a href="../index.html" onclick="closeMenu()">HOME</a>
+      <a href="../index.html#services" onclick="closeMenu()">OUR SERVICES</a>
+      <a href="../index.html#about" onclick="closeMenu()">ABOUT US</a>
+      <a href="../index.html#faqs" onclick="closeMenu()">FAQs</a>
+      <a href="../index.html#howwework" onclick="closeMenu()">HOW WE WORK</a>
+      <a href="../index.html#contact" onclick="closeMenu()">CONTACT US</a>
+    </nav>
+  </div>
+</header>
+
 
   <!-- Portfolio Section -->
   <section id="portfolio">
